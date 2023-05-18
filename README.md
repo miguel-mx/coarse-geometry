@@ -1,3 +1,3 @@
-Escuela de Verano 2023 website
+Coarse Geometry website
 
 Centro de Ciencias Matemáticas
