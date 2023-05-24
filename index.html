@@ -31,16 +31,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto ">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Presentación</a>
+                    <a class="nav-link active" aria-current="page" href="#intro">Presentación</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Registro</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cursos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Conferencias</a>
+                    <a class="nav-link" href="#program">Charlas</a>
                 </li>
             </ul>
         </div>
@@ -94,7 +91,7 @@
                     </svg>
                 </div>
                 <div class="info-graph-title">Cupo</div>
-                <div class="info-graph-subtitle">limitado</div>
+                <div class="info-graph-subtitle">Muy limitado</div>
             </div>
             <div class="d-flex flex-column mb-5">
                 <div class="info-icon">
@@ -130,18 +127,13 @@
             <div class="content">
                 <h1 class="mb-4">Coarse Geometry, Index theory and sigularities</h1>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet at leo in ultrices. Suspendisse
-                    potenti. Integer at condimentum felis. Morbi eget hendrerit nulla. Aenean aliquet neque ac eros bibendum
-                    interdum. Sed venenatis metus ut dignissim volutpat. Vivamus vulputate odio quis velit dapibus, sit amet
-                    placerat nisl blandit. Vestibulum consequat, magna non tincidunt malesuada, tortor lacus accumsan mi,
-                    interdum elementum nunc enim commodo augue. Duis at urna in tellus fringilla consequat. Curabitur convallis
-                    enim eu sapien vestibulum, a vulputate libero commodo. Integer eget libero quis est imperdiet suscipit eu
-                    vel diam.</p>
-                <p>Maecenas tristique finibus velit at congue. Nunc a fringilla sem. Aliquam eu orci convallis ante aliquam
-                    semper. Quisque enim dolor, ultricies ultrices nunc eget, accumsan vehicula nisi. Maecenas fermentum
-                    fermentum tellus et tincidunt. Aenean at eros porta, feugiat odio in, tincidunt felis. Cras ac metus
-                    fringilla, tincidunt velit porttitor, vulputate nunc. Nam sit amet finibus nisl, in ullamcorper nisl.
-                    Phasellus nisi neque, imperdiet at lorem ut, posuere eleifend lacus.</p>
+                <p><strong>Coarse Geometry</strong>, as introduced by <span class="color-green">Higson and Roe</span> in the context of index Theory for
+                    non compact manifolds, has a number of developments and crossways with Singularity theory. Grupoids
+                    and Stacks constitute vast conceptual generalizations which allow to formulate index theoretical or
+                    algebraic-geometric information which is relevant to moduli in a general sense.
+                    </p>
+                <p>We will present a panorama of topics which are present at the intersection of these ideas and which
+                    look to extensions of these topics to the "big" setting of "big mapping class groups".</p>
             </div>
         </div>
 </section>
@@ -199,9 +191,9 @@
 
     <div class="container">
         <h1 class="mb-5">Ponentes</h1>
-    </div>
 
-    <div class="ponentes-container d-flex flex-column justify-content-evenly flex-md-row justify-content-md-around">
+
+    <div class="ponentes-container d-flex flex-column justify-content-evenly flex-wrap flex-md-row justify-content-md-around">
         <div class="ponente">
             <div class="ponente-picture">
                 <img src="img/Paolo.png" alt="Foto Paulo Carrillo-Rouse">
@@ -224,380 +216,101 @@
             <div class="ponente-picture">
                 <img src="img/Carlos.png" alt="Foto Carlos Pérez">
             </div>
-            <div class="ponente-name">Noé Bárcenas</div>
+            <div class="ponente-name">Carlos Pérez Estrada</div>
         </div>
         <div class="ponente">
             <div class="ponente-picture">
                 <img src="img/Duarte.png" alt="Foto Daniel Duarte">
             </div>
-            <div class="ponente-name">Noé Bárcenas</div>
+            <div class="ponente-name">Daniel Duarte</div>
+        </div>
+        <div class="ponente">
+            <div class="ponente-picture">
+                <img src="img/Carlos.png" alt="Foto Daniel Duarte">
+            </div>
+            <div class="ponente-name">Quentin Karegar Baneh Kohal</div>
         </div>
     </div>
-
+    </div>
 </section>
 
 
-<!--<section id="program">
+<section id="program">
 
     <div class="container">
-        <h1 class="mb-3">Cursos</h1>
-        <h6 class="mt-5 color-cyan">C1 y C2: Cursos de 8 horas. Obligatorios</h6>
-        <div class="row">
-            <div class="col-12 col-sm-6">
-                <div class="program-container d-flex flex-row" data-curso="C1">
-                    <div class="program-code d-flex align-content-center">C1</div>
-                    <div class="talk-container d-flex flex-column">
-                        <div class="title">Grupos, Acciones y Geometría</div>
-                        <div class="speaker">Jesús Hernández Hernández</div>
-                    </div>
-                </div>
-            </div>
-            &lt;!&ndash; Modal &ndash;&gt;
-            <div class="modal fade" id="modalC1" tabindex="-1" aria-labelledby="c1ModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title color-cyan" id="c1ModalLabel">C1 Grupos, Acciones y Geometría</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="schedule-speaker my-4">Jesús Hernández Hernández</div>
-                            Los grupos son una de las estructuras más básicas del álgebra. Sin embargo, por su nivel
-                            de generalidad, muchas veces se vuelve muy difícil poder estudiarlos profundamente. Para
-                            ayudar a su estudio se utilizan las llamadas "acciones de grupo" en conjuntos, espacios,
-                            etc. Más aún, dependiendo de la estructura que tenga el lugar donde actúen y de las
-                            propiedades de la acción, se pueden "jalar" muchas propiedades a los grupos. Con esto en
-                            mente, la teoría geométrica de grupos es el estudio de los grupos a través de sus acciones
-                            en objetos geométricos (usualmente espacios métricos). En esta plática daremos un breve
-                            vistazo a la teoría geométrica de grupos y al concepto de curvatura negativa en grupos.
-                            Primero, vamos a ver cómo es posible ver a un grupo como un espacio métrico y su accion
-                            isométrica en sí mismo. Posteriormente, veremos acciones isométricas más generales de
-                            grupos con diferentes propiedades, y el que se considera el resultado fundamental de la
-                            teoría (Lema de Milnor-Schwarz), el cual nos permitirá hacer "equivalentes" la información
-                            obtenida a partir de una acción del grupo y la información obtenida de ver al grupo como
-                            un espacio métrico. Finalmente, veremos como se puede dotar a un espacio (y por ende a un
-                            grupo) de una "curvatura negativa", y sus ventajas.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6">
-                <div class="program-container d-flex flex-row" data-curso="C2">
-                    <div class="program-code d-flex align-content-center">C2</div>
-                    <div class="talk-container d-flex flex-column">
-                        <div class="title">Breve introducción a la teoría de control óptimo</div>
-                        <div class="speaker">Abdón Choque Rivero</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        &lt;!&ndash; Modal &ndash;&gt;
-        <div class="modal fade" id="modalC2" tabindex="-1" aria-labelledby="c2ModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title color-cyan" id="c2ModalLabel">C2 Breve introducción a la teoría de control óptimo</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="schedule-speaker my-4">Abdón Choque Rivero</div>
-                        Entre los problemas considerados en la teoría de control podemos señalar el siguiente: dados un
-                        sistema de ecuaciones diferenciales ordinarias (EDO) y un funcional que involucran el estado y
-                        un control, se requiere hallar el control y la trayectoria correspondiente de la EDO, ambos
-                        óptimos en el sentido del funcional dado, tal que permitan trasladar un estado inicial dado a
-                        otro estado final en tiempo finito mediante un control acotado y tal que el funcional alcance su
-                        mínimo o máximo.<br><br>
-                        En el curso trataremos el problema anterior y discutiremos los siguientes apartados.
-                        <ul>
-                            <li>Problema de control de tiempo óptimo para sistemas lineales.</li>
-                            <li>Relaciones entre el cálculo de variaciones y el control óptimo.</li>
-                            <li>Reducción del problema del apartado a) a un problema de momentos.</li>
-                        </ul>
-                        <br>
-                        Haremos énfasis en la discusión de ejemplos y ejercicios accesibles para estudiantes de licenciatura.<br><br>
-
-                        Cabe mencionar que el control óptimo matemático tiene aplicaciones en modelos matemáticos de la
-                        biología, economía, medicina e ingeniería, entre otros.
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <h6 class="mt-4 color-cyan">C3 a C6: Cursos de 6 horas. Optativos</h6>
+        <h1 class="mb-3">Charlas</h1>
 
         <div class="row">
             <div class="col-12 col-sm-6">
-                <div class="program-container d-flex flex-row" data-curso="C3">
-                    <div class="program-code d-flex align-content-center">C3</div>
+                <div class="program-container d-flex flex-row">
                     <div class="talk-container d-flex flex-column">
-                        <div class="title">De las peras y manzanas a la Geometría Algebraica</div>
-                        <div class="speaker">Juan Bosco Frías Medina</div>
+                        <div class="title">Stacks</div>
+                        <div class="speaker">Quentin Karegar Baneh Kohal</div>
                     </div>
-                </div>
-                &lt;!&ndash; Modal &ndash;&gt;
-                <div class="modal fade" id="modalC3" tabindex="-1" aria-labelledby="c3ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title color-cyan" id="c3ModalLabel">C3 De las peras y manzanas a la Geometría Algebraica</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="schedule-speaker my-4">Juan Bosco Frías Medina</div>
-                                La Geometría Algebraica es el área de las matemáticas que estudia la geometría usando
-                                herramientas algebraicas. En su enfoque clásico, se encargaba del estudio de los ceros
-                                de polinomios en varias variables, las llamadas variedades algebraicas. El enfoque moderno
-                                que se utiliza en la actualidad es debido a los trabajos de Alexander Grothendieck que
-                                llevaron al desarrollo de la Teoría de Esquemas. En este curso, revisaremos cómo nos
-                                hemos encontrado con algunas nociones de Geometría Algebraica sin saberlo, a las variedades
-                                algebraicas desde el enfoque clásico y terminaremos con un vistazo a los esquemas.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="program-container d-flex flex-row" data-curso="C4">
-                    <div class="program-code d-flex align-content-center">C4</div>
-                    <div class="talk-container d-flex flex-column">
-                        <div class="title">Una invitación a la geometría tórica</div>
-                        <div class="speaker">Daniel Duarte</div>
-                    </div>
-                </div>
-                &lt;!&ndash; Modal &ndash;&gt;
-                <div class="modal fade" id="modalC4" tabindex="-1" aria-labelledby="c4ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title color-cyan" id="c4ModalLabel">C4 Una invitación a la geometría tórica.</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="schedule-speaker my-4">A. Daniel Duarte</div>
-                                Este curso será una introducción a las variedades tóricas, que son variedades algebraicas
-                                definidas a través de objetos combinatorios como conos o semigrupos. Veremos que algunos
-                                problemas de geometría algebraica, como el cálculo de la multiplicidad de un punto o la
-                                resolución de singularidades, se convierten en divertidos juegos combinatorios.
-                            </div>
-                        </div>
-                    </div>
+
+
                 </div>
             </div>
-            <div class="col-12 col-sm-6">
-                <div class="program-container d-flex flex-row" data-curso="C5">
-                    <div class="program-code d-flex align-content-center">C5</div>
-                    <div class="talk-container d-flex flex-column">
-                        <div class="title">Aplicaciones de análisis topológico de datos a Pangenómica</div>
-                        <div class="speaker">Nelly Selém Mojica</div>
-                    </div>
-                </div>
-                &lt;!&ndash; Modal &ndash;&gt;
-                <div class="modal fade" id="modalC5" tabindex="-1" aria-labelledby="c5ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title color-cyan" id="c5ModalLabel">C5 Aplicaciones de análisis topológico de datos a Pangenómica.</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="schedule-speaker mt-4">Nelly Selém Mojica</div>
-                                <div class="mb-4 text-secondary"><strong>Ayudante: </strong>Haydeé Peruyero</div>
-                                Es sorprendente que genomas bacterianos de la misma especie difieren en su contenido génico.
-                                En la genómica, al estudio de todos los genes de todas las cepas de un mismo clado se le
-                                llama pangenoma.<br><br>
-                                En años recientes, el acceso y disponibilidad de grandes bases de datos biológicos se ha
-                                incrementado exponencialmente. Una herramienta para estudiar estos repositorios es el
-                                análisis topológico de datos (TDA) que nos ayuda a inferir propiedades de los objetos de
-                                estudio al asociarles un espacio topológico.<br><br>
-                                En este curso aprenderemos los fundamentos de pangenómica y de TDA y trataremos de construir
-                                un análisis en el lenguaje de programación Python.<br><br>
-                                No es necesario conocimiento previo de biología o TDA, este será un curso introductorio
-                                que pretende abordar el problema multidisciplinario de describir cómo evolucionan los genomas bacterianos.
-                                <br><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="program-container d-flex flex-row" data-curso="C6">
-                    <div class="program-code d-flex align-content-center">C6</div>
+            <div class="col-12 col-sm-6">
+                <div class="program-container d-flex flex-row">
                     <div class="talk-container d-flex flex-column">
-                        <div class="title">Álgebra homológica Gorenstein; ¿Como comenzó, cómo va y a donde puede ir?</div>
-                        <div class="speaker">Victor Becerril Somera</div>
+                        <div class="title">Coarse Geomety of big Mapping class groups</div>
+                        <div class="speaker">Carlos Pérez Estrada</div>
                     </div>
-                </div>
-                <div class="modal fade" id="modalC6" tabindex="-1" aria-labelledby="c6ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title color-cyan" id="c6ModalLabel">C6 Álgebra homológica Gorenstein; ¿Como comenzó, cómo va y a donde puede ir?</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="schedule-speaker mt-4">Victor Becerril Somera</div>
-                                <div class="mb-4 text-secondary"><strong>Ayudante: </strong>Alejando Argudín Monroy</div>
-                                El "Álgebra homológica Gorenstein" es un tipo de Álgebra homológica relativa en R-Módulos
-                                donde las clases especiales de módulos proyectivos, inyectivos y planos de tipo Gorenstein
-                                extienden a los clásicos, con ello las cotas homológicas son mas finas, existen funtores
-                                derivados, existe el balance del Hom, entre otras propiedades. En los últimos años han
-                                aparecido varias clases de módulos de tipo Gorenstein que han sido un fuerte empuje para
-                                la investigación en Álgebra Homológica y sus áreas de interacción. Este curso tiene por
-                                objetivo entregar una perspectiva sobre precisamente esta afirmación, mostrar el alcance
-                                de esta clase de módulos dentro de la teoría de representaciones, teoría de anillos,
-                                teoría de categorías y álgebra homológica misma.
-                                <br><br>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
-
-        <h1 class="mt-5 mb-3">Pláticas</h1>
-
         <div class="row">
             <div class="col-12 col-sm-6">
-                <div class="program-container d-flex flex-row" data-curso="P1">
-                    <div class="program-code d-flex align-content-center">P1</div>
+                <div class="program-container d-flex flex-row">
                     <div class="talk-container d-flex flex-column">
-                        <div class="title">Módulos indescomponibles de dimensión infinita</div>
-                        <div class="speaker">Alejandro Argudín Monroy</div>
+                        <div class="title">Via deformacion al cono normal</div>
+                        <div class="speaker">Paulo-Atiyah Singer</div>
                     </div>
                 </div>
-                <div class="modal fade" id="modalP1" tabindex="-1" aria-labelledby="p1ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title color-cyan" id="p1ModalLabel">P1 Módulos indescomponibles de dimensión infinita</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="schedule-speaker my-4">Alejandro Argudín Monroy</div>
-                                Sea A una k-álgebra de dimensión finita. Decimos que un A-módulo es indescomponible si
-                                no se puede expresar como la suma directa de dos submódulos no nulos. Es un hecho bien
-                                conocido que todo A-módulo de dimensión finita se expresa como una suma directa de
-                                submódulos indescomponibles. Es natural preguntarse qué podemos decir de los A-módulos
-                                que no son de dimensión finita. Al respecto, un resultado de Maurice Auslander nos dice
-                                que, en caso de que exista un número finito de A módulos indescomponibles de dimensión
-                                finita, tenemos que todo A-módulo se expresa como una suma directa de submódulos
-                                indescomponibles de dimensión finita. El objetivo de esta plática será hablar sobre los
-                                fenónemos patológicos que pueden ocurrir cuando no se cumple esta condición. En particular
-                                mostraremos cómo construir módulos indescomponibles de dimensión infinita y discutiremos
-                                porqué es importante estudiarlos.
-                                <br><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="program-container d-flex flex-row" data-curso="P2">
-                    <div class="program-code d-flex align-content-center">P2</div>
-                    <div class="talk-container d-flex flex-column">
-                        <div class="title">Una introducción al análisis topológico de datos y aprendizaje geométrico profundo</div>
-                        <div class="speaker">Haydeé Contreras Peruyero</div>
-                    </div>
-                </div>
-                <div class="modal fade" id="modalP2" tabindex="-1" aria-labelledby="p2ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title color-cyan" id="p2ModalLabel">P2 Una introducción al análisis topológico de datos y aprendizaje geométrico profundo</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="schedule-speaker my-4">Haydeé Contreras Peruyero</div>
-                                El análisis topológico de datos y el aprendizaje geométrico profundo nos dan una forma
-                                de entender y extraer propiedades topológicas y geométricas de conjuntos de datos, por
-                                ejemplo podemos estudiar la estructura a gran escala de las galaxias y reconstruir superficies.
-                                En esta plática vamos a explorar conceptos relacionados a estos temas y veremos ciertas
-                                aplicaciones en diversas áreas.
-                                <br><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
             <div class="col-12 col-sm-6">
-                <div class="program-container d-flex flex-row" data-curso="P3">
-                    <div class="program-code d-flex align-content-center">P3</div>
+                <div class="program-container d-flex flex-row">
                     <div class="talk-container d-flex flex-column">
-                        <div class="title">El tiempo; en ecuaciones diferenciales, álgebra y topología</div>
-                        <div class="speaker">Jesús Muciño Raymundo</div>
+                        <div class="title">Clasifinacion de ADE-Singularidades</div>
+                        <div class="speaker">Mark Spivakovsky/ Daniel Duarte</div>
                     </div>
                 </div>
-                <div class="modal fade" id="modalP3" tabindex="-1" aria-labelledby="p3ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title color-cyan" id="p3ModalLabel">P3 El tiempo; en ecuaciones diferenciales, álgebra y topología</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="schedule-speaker my-4">Jesús Muciño Raymundo</div>
-                                En la naturaleza, el fluir del tiempo determina cambios en los objetos y sistemas. La
-                                interacción de esta idea con las matemáticas puras es el objetivo de la platica.
-                                <br><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="program-container d-flex flex-row" data-curso="P4">
-                    <div class="program-code d-flex align-content-center">P4</div>
-                    <div class="talk-container d-flex flex-column">
-                        <div class="title">Propiedades dinámicas de los sistemas biológicos</div>
-                        <div class="speaker">Eugenio Azpeitia Espinosa</div>
-                    </div>
-                </div>
-                <div class="modal fade" id="modalP4" tabindex="-1" aria-labelledby="p4ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title color-cyan" id="p4ModalLabel">P4 Propiedades dinámicas de los sistemas biológicos</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="schedule-speaker my-4">Eugenio Azpeitia Espinosa</div>
-                                Los sistemas biológicos a todos los niveles, desde la genética hasta los ecosistemas, son
-                                intrínsecamente dinámicos. Durante mucho tiempo, sus propiedades fueron principalmente
-                                estudiadas por medio de observaciones y experimentos. Sin embargo, en las últimas décadas
-                                se ha mostrado que la mayoría de los sistemas biológicos tienen dinámicas no lineales, por
-                                lo que requieren el uso de herramientas matemáticas (y computacionales) para su entendimiento.
-                                De esta forma, las matemáticas se han integrado como parte fundamental del estudio de los
-                                sistemas biológicos, lo que ha traído teorías sumamente novedosas en múltiples temáticas,
-                                como el origen de enfermedades, la evolución de los organismos, el manejo de los sistemas
-                                de producción agrícola, entre muchos más. En esta plática se dará un panorama general de
-                                la biología matemática, mostraremos cuáles son algunos de las herramientas y conceptos
-                                matemáticos que se utilizan en biología, con especial énfasis en aquellas usadas para
-                                entender su dinámica. Durante la plática discutiremos algunos ejemplos donde la interacción
-                                entre la biología y la matemática esta siendo especialmente fructífera. El objetivo principal
-                                de la plática es brindar un panorama de la utilidad y necesidad de usar a las matemáticas
-                                para el estudio de la dinámica de los sistemas biológicos.
-                                <br><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="program-container d-flex flex-row">
+                    <div class="talk-container d-flex flex-column">
+                        <div class="title">K teoría de álgebras C* y K teoría Coarse</div>
+                        <div class="speaker">Noé Bárcenas</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="program-container d-flex flex-row">
+                </div>
+            </div>
+        </div>
+
     </div>
-</section>-->
+</section>
 
 <section id="schedule">
 
-    <div class="container">
+<!--    <div class="container">
 
         <h1 class="mb-5">Programa</h1>
 
         <nav>
             <div class="nav nav-tabs" id="nav-tab2" role="tablist">
-                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-lun" type="button" role="tab" aria-controls="nav-lun" aria-selected="true">Lunes 31</button>
-                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-mar" type="button" role="tab" aria-controls="nav-mar" aria-selected="false">Martes 1</button>
-                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-mie" type="button" role="tab" aria-controls="nav-mie" aria-selected="false">Miércoles 2</button>
-                <button class="nav-link" id="nav-candidatura-tab" data-bs-toggle="tab" data-bs-target="#nav-jue" type="button" role="tab" aria-controls="nav-jue" aria-selected="false">Jueves 3</button>
-                <button class="nav-link" id="nav-grado-tab" data-bs-toggle="tab" data-bs-target="#nav-vie" type="button" role="tab" aria-controls="nav-vie" aria-selected="false">Viernes 4</button>
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-lun" type="button" role="tab" aria-controls="nav-lun" aria-selected="true">Lunes 24</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-mar" type="button" role="tab" aria-controls="nav-mar" aria-selected="false">Martes 25</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-mie" type="button" role="tab" aria-controls="nav-mie" aria-selected="false">Miércoles 26</button>
+                <button class="nav-link" id="nav-candidatura-tab" data-bs-toggle="tab" data-bs-target="#nav-jue" type="button" role="tab" aria-controls="nav-jue" aria-selected="false">Jueves 27</button>
+                <button class="nav-link" id="nav-grado-tab" data-bs-toggle="tab" data-bs-target="#nav-vie" type="button" role="tab" aria-controls="nav-vie" aria-selected="false">Viernes 28</button>
             </div>
         </nav>
         <div class="tab-content" id="nav-tab2Content">
@@ -605,47 +318,25 @@
                 <div class="table-responsive">
                     <table class="table">
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">09:00 - 11:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">10:00 - 11:15 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">C1 - Grupos, Acciones y Geometría</div>
-                                    <div class="schedule-speaker">Jesús Hernández Hernández</div>
-
+                                    <div class="schedule-title">K Teoría</div>
+                                    <div class="schedule-speaker">Noé Barcenas</div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">11:00 - 11:20 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">12:00 - 13:15 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">Café</div>
+                                    <div class="schedule-title">Stacks</div>
+                                    <div class="schedule-speaker">Quentin Karegar</div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">11:20 - 13:20 horas</div></div></td>
-                            <td>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">C3 - De las peras y manzanas a la Geometría Algebraica</div>
-                                    <div class="schedule-speaker">Juan Bosco Frías Medina</div>
-                                </div>
-                                <div class="d-flex flex-column mt-4">
-                                    <div class="schedule-title">C4 - Una invitación a la geometría tórica</div>
-                                    <div class="schedule-speaker">A. Daniel Duarte</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">13:20 - 14:20 horas</div></div></td>
-                            <td>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">P1 - Módulos indescomponibles de dimensión infinita</div>
-                                    <div class="schedule-speaker">Alejandro Argudín Monroy</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">14:20 - 16:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">13:15 - 15:30 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
                                     <div class="schedule-title">Comida</div>
@@ -653,12 +344,19 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">16:00 - 18:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">15:30 - 17:00 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">C2 - Breve introducción a la teoría de control óptimo</div>
-                                    <div class="schedule-speaker">Abdón Choque Rivero</div>
-
+                                    <div class="schedule-title">Singularidades</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">17:00 - 18:30 horas</div></div></td>
+                            <td>
+                                <div class="d-flex flex-column">
+                                    <div class="schedule-title">K Teoría</div>
+                                    <div class="schedule-speaker">Noé Bárcenas</div>
                                 </div>
                             </td>
                         </tr>
@@ -669,60 +367,25 @@
                 <div class="table-responsive">
                     <table class="table">
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">09:00 - 10:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">10:00 - 11:15 horas</div></div></td>
                             <td>
-                                <p class="color-cyan">Sesión de Ejercicios</p>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">C3 - De las peras y manzanas a la Geometría Algebraica</div>
-                                    <div class="schedule-speaker">Juan Bosco Frías Medina</div>
-                                </div>
-                                <div class="d-flex flex-column mt-4">
-                                    <div class="schedule-title">C4 - Una invitación a la geometría tórica</div>
-                                    <div class="schedule-speaker">A. Daniel Duarte</div>
+                                    <div class="schedule-title">Stacks</div>
+                                    &lt;!&ndash;<div class="schedule-speaker">Noé Barcenas</div>&ndash;&gt;
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">10:00 - 11:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">12:00 - 13:15 horas</div></div></td>
                             <td>
-                                <p class="color-cyan">Sesión de Ejercicios</p>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">C2 - Breve introducción a la teoría de control óptimo</div>
-                                    <div class="schedule-speaker">Abdón Choque Rivero</div>
-
+                                    <div class="schedule-title">Singularidades</div>
+                                    &lt;!&ndash;<div class="schedule-speaker">Quentin Karegar</div>&ndash;&gt;
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">11:00 - 11:20 horas</div></div></td>
-                            <td>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">Café</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">11:20 - 13:20 horas</div></div></td>
-                            <td>
-                                <p class="color-cyan">Sesión de Ejercicios</p>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">C1 - Grupos, Acciones y Geometría</div>
-                                    <div class="schedule-speaker">Jesús Hernández Hernández</div>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">13:20 - 14:20 horas</div></div></td>
-                            <td>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">P2 - Una introducción al análisis topológico de datos y aprendizaje geométrico profundo</div>
-                                    <div class="schedule-speaker">Haydeé Contreras Peruyero</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">14:20 - 16:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">13:15 - 15:30 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
                                     <div class="schedule-title">Comida</div>
@@ -730,15 +393,19 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">16:00 - 18:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">15:30 - 17:00 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">C5 - Aplicaciones de análisis topológico de datos a Pangenómica</div>
-                                    <div class="schedule-speaker">Nelly Selém Mojica</div>
+                                    <div class="schedule-title">Via deformación al cono normal</div>
+                                    <div class="schedule-speaker">Paulo- Atiyah Singer</div>
                                 </div>
-                                <div class="d-flex flex-column mt-4">
-                                    <div class="schedule-title">C6 - Álgebra homológica Gorenstein; ¿Como comenzó, cómo va y a donde puede ir?</div>
-                                    <div class="schedule-speaker">Victor Becerril Somera</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">17:00 - 18:30 horas</div></div></td>
+                            <td>
+                                <div class="d-flex flex-column">
+                                    <div class="schedule-title">Singularidades</div>
                                 </div>
                             </td>
                         </tr>
@@ -749,60 +416,28 @@
                 <div class="table-responsive">
                     <table class="table">
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">09:00 - 11:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">10:00 - 11:15 horas</div></div></td>
                             <td>
-                                <p class="color-cyan">Sesión de Ejercicios</p>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">C5 - Aplicaciones de análisis topológico de datos a Pangenómica</div>
-                                    <div class="schedule-speaker">Nelly Selém Mojica</div>
-                                </div>
-                                <div class="d-flex flex-column mt-4">
-                                    <div class="schedule-title">C6 - Álgebra homológica Gorenstein; ¿Como comenzó, cómo va y a donde puede ir?</div>
-                                    <div class="schedule-speaker">Victor Becerril Somera</div>
+                                    <div class="schedule-title">Stacks</div>
+                                    &lt;!&ndash;<div class="schedule-speaker">Noé Barcenas</div>&ndash;&gt;
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">11:00 - 11:20 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">12:00 - 13:15 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">Café</div>
+                                    <div class="schedule-title">K Teoría</div>
+                                    <div class="schedule-speaker">Noé Bárcenas</div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">11:20 - 13:20 horas</div></div></td>
-                            <td>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">C1 - Grupos, Acciones y Geometría</div>
-                                    <div class="schedule-speaker">Jesús Hernández Hernández</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">13:20 - 14:20 horas</div></div></td>
-                            <td>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">P3 - El tiempo; en ecuaciones diferenciales, álgebra y topología</div>
-                                    <div class="schedule-speaker">Jesús Muciño Raymundo</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">14:20 - 16:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">13:15 - 15:30 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
                                     <div class="schedule-title">Comida</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">16:00 - 18:00 horas</div></div></td>
-                            <td>
-                                <p class="color-cyan">Sesión de Ejercicios</p>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">C1 - Grupos, Acciones y Geometría</div>
-                                    <div class="schedule-speaker">Jesús Hernández Hernández</div>
                                 </div>
                             </td>
                         </tr>
@@ -813,46 +448,25 @@
                 <div class="table-responsive">
                     <table class="table">
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">09:00 - 11:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">10:00 - 11:15 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">C2 - Breve introducción a la teoría de control óptimo</div>
-                                    <div class="schedule-speaker">Abdón Choque Rivero</div>
+                                    <div class="schedule-title">Coarse Geomety of big Mapping class groups</div>
+                                    <div class="schedule-speaker">Carlos Pérez</div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">11:00 - 11:20 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">12:00 - 13:15 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">Café</div>
+                                    <div class="schedule-title">Via deformación al cono normal</div>
+                                    <div class="schedule-speaker">Paulo- Atiyah Singer</div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">11:20 - 13:20 horas</div></div></td>
-                            <td>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">C3 - De las peras y manzanas a la Geometría Algebraica</div>
-                                    <div class="schedule-speaker">Juan Bosco Frías Medina</div>
-                                </div>
-                                <div class="d-flex flex-column mt-4">
-                                    <div class="schedule-title">C4 - Una invitación a la geometría tórica</div>
-                                    <div class="schedule-speaker">A. Daniel Duarte</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">13:20 - 14:20 horas</div></div></td>
-                            <td>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">P4 - Propiedades dinámicas de los sistemas biológicos</div>
-                                    <div class="schedule-speaker">Eugenio Azpeitia Espinosa</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">14:20 - 16:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">13:15 - 15:30 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
                                     <div class="schedule-title">Comida</div>
@@ -860,13 +474,20 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">16:00 - 18:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">15:30 - 17:00 horas</div></div></td>
                             <td>
-                                <p class="color-cyan">Sesión de Ejercicios</p>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">C2 - Breve introducción a la teoría de control óptimo</div>
-                                    <div class="schedule-speaker">Abdón Choque Rivero</div>
-
+                                    <div class="schedule-title">Coarse Geomety of big Mapping class groups</div>
+                                    <div class="schedule-speaker">Carlos Pérez</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">17:00 - 18:30 horas</div></div></td>
+                            <td>
+                                <div class="d-flex flex-column">
+                                    <div class="schedule-title">Via deformación al cono normal</div>
+                                    <div class="schedule-speaker">Paulo- Atiyah Singer</div>
                                 </div>
                             </td>
                         </tr>
@@ -877,59 +498,27 @@
                 <div class="table-responsive">
                     <table class="table">
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">09:00 - 10:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">10:00 - 11:15 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">C5 - Aplicaciones de análisis topológico de datos a Pangenómica</div>
-                                    <div class="schedule-speaker">Nelly Selém Mojica</div>
-                                </div>
-                                <div class="d-flex flex-column mt-4">
-                                    <div class="schedule-title">C6 - Álgebra homológica Gorenstein; ¿Como comenzó, cómo va y a donde puede ir?</div>
-                                    <div class="schedule-speaker">Victor Becerril Somera</div>
+                                    <div class="schedule-title">Coarse Geomety of big Mapping class groups</div>
+                                    <div class="schedule-speaker">Carlos Pérez</div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">10:00 - 11:00 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">12:00 - 13:15 horas</div></div></td>
                             <td>
-                                <p class="color-cyan">Sesión de Ejercicios</p>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">C3 - De las peras y manzanas a la Geometría Algebraica</div>
-                                    <div class="schedule-speaker">Juan Bosco Frías Medina</div>
-                                </div>
-                                <div class="d-flex flex-column mt-4">
-                                    <div class="schedule-title">C4 - Una invitación a la geometría tórica</div>
-                                    <div class="schedule-speaker">A. Daniel Duarte</div>
+                                    <div class="schedule-title">Singularidades</div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">11:00 - 11:20 horas</div></div></td>
+                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">13:15 - 15:30 horas</div></div></td>
                             <td>
                                 <div class="d-flex flex-column">
-                                    <div class="schedule-title">Café</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">11:20 - 13:20 horas</div></div></td>
-                            <td>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">C5 - Aplicaciones de análisis topológico de datos a Pangenómica</div>
-                                    <div class="schedule-speaker">Nelly Selém Mojica</div>
-                                </div>
-                                <div class="d-flex flex-column mt-4">
-                                    <div class="schedule-title">C6 - Álgebra homológica Gorenstein; ¿Como comenzó, cómo va y a donde puede ir?</div>
-                                    <div class="schedule-speaker">Victor Becerril Somera</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-20"><div class="d-flex align-items-center"><div class="schedule-time">13:20 - 14:20 horas</div></div></td>
-                            <td>
-                                <div class="d-flex flex-column">
-                                    <div class="schedule-title">Charla del Posgrado Conjunto</div>
-                                    <div class="schedule-speaker">Morelia Álvarez</div>
+                                    <div class="schedule-title">Comida</div>
                                 </div>
                             </td>
                         </tr>
@@ -937,7 +526,68 @@
                 </div>
             </div>
         </div>
-   </div>
+   </div>-->
+
+
+    <div class="container">
+
+        <h1 class="mb-5">Horario</h1>
+
+        <div class="table-responsive-lg">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col" class="text-center"><span class="color-green fw-bold">Lunes 24</span></th>
+                    <th scope="col" class="text-center"><span class="color-green fw-bold">Martes 25</span></th>
+                    <th scope="col" class="text-center"><span class="color-green fw-bold">Miércoles 26</span></th>
+                    <th scope="col" class="text-center"><span class="color-green fw-bold">Jueves 27</span></th>
+                    <th scope="col" class="text-center"><span class="color-green fw-bold">Viernes 28</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row"><div class="d-flex flex-column text-secondary"><div>10:00</div><div></div>11:15</div></th>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">K Teoría</div><div class="schedule-speaker">Noé Bárcenas</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Stacks</div><div class="schedule-speaker">Quentin Karegar</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Stacks</div><div class="schedule-speaker">Quentin Karegar</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Coarse Geomety </div><div class="schedule-speaker">Carlos Pérez</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Coarse Geomety </div><div class="schedule-speaker">Carlos Pérez</div></div></td>
+                </tr>
+                <tr>
+                    <th scope="row"><div class="d-flex flex-column text-secondary"><div>12:00</div><div></div>13:15</div></th>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Stacks</div><div class="schedule-speaker">Quentin Karegar</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Singularidades</div><div class="schedule-speaker">Mark Spivakovsky/ Daniel Duarte</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">K Teoría</div><div class="schedule-speaker">Noé Bárcenas</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Via deformacion al cono normal</div><div class="schedule-speaker">Paulo-Atiyah Singer</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Singularidades</div><div class="schedule-speaker">Mark Spivakovsky/ Daniel Duarte</div></div></td>
+                </tr>
+                <tr>
+                    <th scope="row"><div class="d-flex flex-column text-secondary"><div>13:15</div><div></div>15:30</div></th>
+                    <td colspan="5"><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Comida</div></div></td>
+                </tr>
+                <tr>
+                    <th scope="row"><div class="d-flex flex-column text-secondary"><div>15:30</div><div></div>17:00</div></th>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Singularidades</div><div class="schedule-speaker">Mark Spivakovsky/ Daniel Duarte</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Via deformacion al cono normal</div><div class="schedule-speaker">Paulo-Atiyah Singer</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Coarse Geomety </div><div class="schedule-speaker">Carlos Pérez</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"></div></td>
+                </tr>
+                <tr>
+                    <th scope="row"><div class="d-flex flex-column text-secondary"><div>17:30</div><div></div>18:30</div></th>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">K Teoría</div><div class="schedule-speaker">Noé Bárcenas</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Singularidades</div><div class="schedule-speaker">Mark Spivakovsky/ Daniel Duarte</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"><div class="schedule-title">Via deformacion al cono normal</div><div class="schedule-speaker">Paulo-Atiyah Singer</div></div></td>
+                    <td><div class="d-flex flex-column justify-content-center text-center"></div></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
 </section>
 
 <section id="contacto">

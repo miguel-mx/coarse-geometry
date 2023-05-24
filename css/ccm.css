@@ -169,6 +169,11 @@ p {
     padding: 28px 0;
 }
 
+.ponente {
+/*    min-width: 200px;*/
+    margin-top: 32px;
+}
+
 .ponente-picture {
     text-align: center;
 }
@@ -196,13 +201,13 @@ p {
 }
 
 .title {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     color: black;
 }
 
 .speaker {
-    font-size: 16px;
+    font-size: 18px;
     color: #878787;
 }
 
@@ -455,7 +460,8 @@ p {
 }
 
 .nav-link {
-     padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem;
+    margin-left: 40px;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -574,6 +580,17 @@ tr:hover .schedule-time, tr:hover  .schedule-title, tr:hover .schedule-speaker {
         margin-bottom: 24px;
     }
 
+    .hero-title-blue {
+        padding-top: 80px;
+    }
+    .hero-title-white {
+        padding-top: 40px;
+    }
+
+    .hero-location {
+        padding-top: 30px;
+    }
+
     .hero-text {
         margin-top: 180px;
     }
@@ -614,5 +631,5 @@ tr:hover .schedule-time, tr:hover  .schedule-title, tr:hover .schedule-speaker {
     padding: 14px 28px;
 }
 
-}
+
 
